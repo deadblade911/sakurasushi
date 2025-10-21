@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Сакура - Доставка суши и вок</title>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🍣</span>
+                    <h1>Сакура</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="active">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="promotions.html">Акции</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+<div style="display: flex; align-items: center; gap: 15px;">
+    <button class="auth-btn" id="openAuthModal">Войти</button>
+    <a href="cart.html" class="cart-btn">
+        Корзина
+        <span class="cart-count">0</span>
+    </a>
+</div>
+</div>
+        </div>
+    </header>
+
+    <!-- Баннер -->
+    <section class="banner">
+        <div class="container">
+            <h2>Вкуснейшие суши и вок с доставкой</h2>
+            <p>Быстрая доставка свежих суши, роллов и вок прямо к вашему столу. Закажите онлайн и получите скидку 10% на первый заказ!</p>
+            <button class="order-btn">Сделать заказ</button>
+        </div>
+    </section>
+
+    <!-- Каталог -->
+    <section class="catalog" id="catalog">
+        <div class="container">
+            <h2 class="section-title">Наше меню</h2>
+            <div class="categories">
+                <button class="category-btn active">Все</button>
+                <button class="category-btn">Суши</button>
+                <button class="category-btn">Роллы</button>
+                <button class="category-btn">Вок</button>
+                <button class="category-btn">Напитки</button>
+            </div>
+            <div class="products">
+                <!-- Товар 1 -->
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://artsushi-nn.ru/uploads/products/eewk3hkk45t8sa.jpg')"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Филадельфия</h3>
+                        <p class="product-description">Лосось, авокадо, огурец, сливочный сыр, рис</p>
+                        <div class="product-footer">
+                            <span class="product-price">450 ₽</span>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 2 -->
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://avatars.dzeninfra.ru/get-zen_doc/3341818/pub_5fc94989eb95a53734085301_5fc949fb6bcad04cbcaa9ba5/scale_1200')"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Калифорния</h3>
+                        <p class="product-description">Краб, авокадо, огурец, икра масаго</p>
+                        <div class="product-footer">
+                            <span class="product-price">380 ₽</span>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 3 -->
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://avatars.mds.yandex.net/i?id=da1eab01f7b79bf5aeb23a4f13645672_l-5869848-images-thumbs&n=13')"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Вок с курицей</h3>
+                        <p class="product-description">Курица, овощи, яичная лапша, соус терияки</p>
+                        <div class="product-footer">
+                            <span class="product-price">420 ₽</span>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 4 -->
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://yakitoriya-kld.ru/image/catalog/products/9ec1f42e-3643-4e8d-974e-17f422115b8e.jpg')"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Онигири с тунцом</h3>
+                        <p class="product-description">Свежий тунец на рисовой подушке</p>
+                        <div class="product-footer">
+                            <span class="product-price">180 ₽</span>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 5 -->
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://static.tildacdn.com/stor3264-3630-4361-b032-313331313765/99624137.jpg')"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Запеченный ролл с угрем</h3>
+                        <p class="product-description">Угорь, сливочный сыр, соус унаги</p>
+                        <div class="product-footer">
+                            <span class="product-price">520 ₽</span>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 6 -->
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://sushibarnovaya.ru/wp-content/uploads/2023/10/jpeg-4158-1067x800.jpg')"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Вок с лососем</h3>
+                        <p class="product-description">Лосось, овощи, рис, соус терияки</p>
+                        <div class="product-footer">
+                            <span class="product-price">480 ₽</span>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Товар 7 -->
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://avatars.mds.yandex.net/get-eda/14790567/06696883bf6246d1254e0095dea70e61/1440x1082')"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Запеченный ролл сырный</h3>
+                        <p class="product-description">Пармезан, салат айсберг, сливочный сыр, сырный соус, унаги соус, цыпленок</p>
+                        <div class="product-footer">
+                            <span class="product-price">520 ₽</span>
+                            <button class="add-to-cart">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Сакура</h3>
+                    <p>Доставка свежих суши и вок по всей Москве. Быстро, вкусно, качественно.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="#" class="category-btn" style="background-color: #333; border: none; margin: 0px; padding: 0px;">Суши</a></li>
+                        <li><a href="#" class="category-btn" style="background-color: #333; border: none; margin: 0px; padding: 0px;">Роллы</a></li>
+                        <li><a href="#" class="category-btn" style="background-color: #333; border: none; margin: 0px; padding: 0px;">Вок</a></li>
+                        <li><a href="#" class="category-btn" style="background-color: #333; border: none; margin: 0px; padding: 0px;">Напитки</a></li>
+                        <li><a href="#" class="category-btn" style="background-color: #333; border: none; margin: 0px; padding: 0px;">Акции</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <ul>
+                        <li>г. Москва, Нижегородская улица, 32с4</li>
+                        <li>+7 (960) 500-50-52</li>
+                        <li>glebgay@sakura.ru</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Время работы</h3>
+                    <ul>
+                        <li>Пн-Чт: 10:00 - 23:00</li>
+                        <li>Пт-Сб: 10:00 - 00:00</li>
+                        <li>Вс: 11:00 - 22:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; Яичкин Руслан, все права защищены.
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
